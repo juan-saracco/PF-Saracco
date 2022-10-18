@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__font{
+    font-size: 2rem;
+    color: black;
+    margin: 0 1rem;
+}
+
+.header__div{
+    flex-grow: 0;
+}
