@@ -1,8 +1,12 @@
+/*reset*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*fin de reset*/
+/*header*/
+
 
 .header__font{
     font-size: 2rem;
@@ -10,6 +14,55 @@
     margin: 0 1rem;
 }
 
+.header__icon{
+    font-size: 3.5rem;
+
+}
+
 .header__div{
     flex-grow: 0;
 }
+
+/*fin de header*/
+/*main*/
+
+.carousel__img{
+    height: 70rem;
+}
+
+/*fin de main*/
+
+/*media queries*/
+
+@media screen and (max-width: 1024px){
+    
+    .carousel__img{
+        height: 50rem;
+    }
+    
+    .header__font{
+        font-size: 1.2rem;
+        color: black;
+        font-weight: 500;
+        margin: 0 0.5rem;
+    }
+    .header__icon{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .carousel__img{
+        height: 30rem;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    
+    .carousel__img{
+        height: 15rem;
+    }
+}
+/*fin de media queries*/
