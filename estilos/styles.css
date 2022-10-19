@@ -7,6 +7,9 @@
 /*fin de reset*/
 /*header*/
 
+.navbar{
+    background-color: rgba(255, 115, 0, 0.514);
+}
 
 .header__font{
     font-size: 2rem;
@@ -26,11 +29,77 @@
 /*fin de header*/
 /*main*/
 
+.carousel__slider{
+    background-color: black!important;
+}
+
+.carousel__arrow{
+    width: 6%;
+}
+
 .carousel__img{
     height: 70rem;
+    object-fit: cover;
+    position: relative;
+}
+
+.carousel__span{
+    position: absolute;
+    font-size: 3rem;
+}
+
+.span--1{
+    bottom: 20rem;
+    padding: 1rem;
+    left: 5rem;
+}
+
+.span--2{
+    bottom: 15rem;
+    padding: 1rem;
+    left: 5rem;
+}
+
+.carousel__btn{
+    position: absolute;
+    bottom: 12rem;
+    left: 6rem;
+    height: 3.5rem;
+    width: 17rem;
+    font-size: 1.7rem;
+}
+
+.infocard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infocard:hover{
+    background-color: rgba(255, 115, 0, 0.514);
+}
+
+.infocard__h3{
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.infocard__img{
+    height: 100%;
+    width: 95%;
+    object-fit: cover;
+}
+
+.infocard__p{
+    font-size: 2rem;
 }
 
 /*fin de main*/
+/*footer*/
+
+
+
+/*fin de footer*/
 
 /*media queries*/
 
@@ -49,19 +118,145 @@
     .header__icon{
         font-size: 2rem;
     }
+
+    .carousel__arrow{
+        width: 15%;
+    }
+
+    .carousel__span{
+        visibility: hidden;
+     }
+ 
+     .span--1{
+        visibility: hidden;
+     }
+     
+     .span--2{
+         visibility: hidden;
+     }
+     
+     .carousel__btn{
+         visibility: hidden;
+     }
+
+     .infocard__h3 {
+        font-size: 2.5rem;
+        padding: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .infocard__img{
+        height: 15rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .infocard__p{
+        font-size: 1.2rem;
+        
+    }
+
+    .infocard__map{
+        height: 15rem;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px){
     
     .carousel__img{
         height: 30rem;
+        object-fit: cover;
+    }
+
+    .carousel__arrow{
+        width: 20%;
+    }
+
+    .carousel__span{
+        visibility: hidden;
+     }
+ 
+     .span--1{
+        visibility: hidden;
+     }
+     
+     .span--2{
+         visibility: hidden;
+     }
+     
+     .carousel__btn{
+         visibility: hidden;
+     }
+
+     .infocard__h3 {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .infocard__img{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .infocard__p{
+        font-size: 1rem;
+        
+    }
+
+    .infocard__map{
+        height: 20rem;
+        width: 80%;
     }
 }
 
 
 @media screen and (max-width: 425px){
     
+    .p-5{
+        padding: 0!important;
+    }
+
+
     .carousel__img{
+        height: 15rem;
+        position: relative;
+    }
+
+    .carousel__span{
+       visibility: hidden;
+    }
+
+    .span--1{
+       visibility: hidden;
+    }
+    
+    .span--2{
+        visibility: hidden;
+    }
+    
+    .carousel__btn{
+        visibility: hidden;
+    }
+
+    .infocard__h3 {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .infocard__img{
+        height: 15rem;
+        width: 95%;
+        object-fit: cover;
+    }
+    
+    .infocard__p{
+        font-size: 1rem;
+        
+    }
+
+    .infocard__map{
         height: 15rem;
     }
 }
