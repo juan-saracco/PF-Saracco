@@ -29,6 +29,10 @@
 /*fin de header*/
 /*main*/
 
+.main{
+    background-color: antiquewhite;
+}
+
 .carousel__slider{
     background-color: black!important;
 }
@@ -73,6 +77,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 .infocard:hover{
@@ -97,8 +102,89 @@
 /*fin de main*/
 /*footer*/
 
+.footer__container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 20rem;
+    background-color: rgba(255, 115, 0, 0.514);
+}
 
 
+.footer__title{
+    font-size: xx-large;
+    display: block;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 33%;
+    justify-content: space-between;
+}
+.social__img1{
+    height: 7rem;
+    width: 7rem;  
+}
+
+.social__img2{
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 1rem;
+
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.newsletter__p {
+   width: 20rem;
+   height: 6rem;
+   font-size: 1.2rem;
+}
+.newsletter__form{
+       width: 100%;
+       height: 100%;
+}
+.newsletter__input{
+   font-size: larger;
+   width: 80%;
+   text-align: center;
+   display: block;
+   margin: auto;
+   
+}
+
+.newsletter__input2{
+    font-size: larger;
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: 2rem auto;
+    
+ }
+
+.menu {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 2rem;
+   width: 33%;
+   
+}
+
+.menu__anchor{
+   text-decoration: none;
+   font-size: xx-large;
+   color: black;
+}
 /*fin de footer*/
 
 /*media queries*/
@@ -161,6 +247,7 @@
         width: 80%;
     }
 }
+
 
 @media screen and (max-width: 768px){
     
@@ -240,6 +327,10 @@
         visibility: hidden;
     }
 
+    .infocard{
+        margin-bottom: 0rem;
+    }
+
     .infocard__h3 {
         font-size: 2rem;
         padding: 0;
@@ -252,12 +343,65 @@
     }
     
     .infocard__p{
-        font-size: 1rem;
+        font-size: 1rem;  
         
     }
 
     .infocard__map{
         height: 15rem;
     }
+
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        background-color: rgba(255, 115, 0, 0.514);
+    }
+    
+    
+    .footer__title{
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    .social{
+        position: relative;
+        width: 100%;
+        height: 20rem;
+    }
+    
+    .newsletter {
+        width: 100%;
+    }
+    
+    .newsletter__p {
+        font-size: 1rem;
+        width: 100%;
+        padding: .5rem;
+        height: 100%;
+    }
+     .menu {
+        width: 100%;
+        height: 80%;
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .menu__nav{
+        width: 100%;
+     }
+
+     .menu__item{
+        margin: 1rem auto;
+     }
+
+     .menu__anchor{
+        font-size: 1.5rem;
+        width: 100%;
+     }
 }
+
 /*fin de media queries*/
