@@ -149,10 +149,12 @@
    height: 6rem;
    font-size: 1.2rem;
 }
+
 .newsletter__form{
        width: 100%;
        height: 100%;
 }
+
 .newsletter__input{
    font-size: larger;
    width: 80%;
@@ -296,6 +298,99 @@
         height: 20rem;
         width: 80%;
     }
+
+    .footer__container{
+        display: flex;
+        justify-content: space-evenly;
+        height: 25rem;
+        background-color: rgba(255, 115, 0, 0.514);
+    }
+    
+    
+    .footer__title{
+        font-size: 1.5rem;
+        display: block;
+    }
+    
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        width: 15%;
+        justify-content: space-between;
+    }
+    .social__img1{
+        height: 7rem;
+        width: 7rem;  
+    }
+    
+    .social__img2{
+        height: 5rem;
+        width: 5rem;
+        margin-bottom: 1rem;
+    
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    
+    .newsletter__p {
+       width: 80%;
+       height: 80%;
+       font-size: 1.2rem;
+    }
+    
+    .newsletter__form{
+           width: 100%;
+           height: 100%;
+    }
+    
+    .newsletter__input{
+       font-size: larger;
+       width: 80%;
+       text-align: center;
+       display: block;
+       margin: auto;
+       
+    }
+    
+    .newsletter__input2{
+        font-size: larger;
+        width: 80%;
+        text-align: center;
+        display: block;
+        margin: 2rem auto;
+        
+     }
+
+     .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        width: 35%;
+        
+     }
+
+     .menu__anchor{
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+     }
+
+     .menu__item{
+        height: 5rem;
+     }
+
+
 }
 
 
@@ -390,17 +485,19 @@
         align-items: center;
      }
 
-     .menu__nav{
-        width: 100%;
+     .menu__list{
+        padding: 0;
+        margin: .5rem auto;
      }
 
      .menu__item{
-        margin: 1rem auto;
+        background-color: rgba(255, 115, 0, 0.651);
+        margin: 1rem;
      }
 
      .menu__anchor{
         font-size: 1.5rem;
-        width: 100%;
+        color: black;
      }
 }
 
