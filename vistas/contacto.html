@@ -5,9 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optica Saracco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/styles.css">
 </head>
 <body>
-    
+<!--header-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand header__font header__icon" href="../index.html">Optica Saracco</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse header__div" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link header__font" href="./lentesdesol.html">Lentes de sol</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__font" href="./lentesdevista.html">Lentes de vista</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__font" href="./lentesdecontacto.html">Lentes de Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__font" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+<!--fin de header-->
+<!--main-->
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <form class="col-lg-12 contact__container needs-validation" novalidate">
+                    <div class="form__title">
+                        <h1 class="contact__h1">Contacto</h1>
+                        <p class="contact__p">Te invitamos a dejar tu duda, consulta o sugerencia completando este formulario.</p>
+                        <p class="contact__p2">Nuestro equipo de atención al cliente se comunicará a la brevedad.</p>
+                    </div>
+                    <div class="form__container">
+                        <div class="mb-3">
+                            <label for="Input" class="form-label">Correo electronico</label>
+                            <input type="email" class="form-control form-control-lg" id="Input" placeholder="nombreapellido@ejemplo.com" aria-label=".form-control-lg">
+                            
+                          </div>
+                          <div class="mb-3">
+                            <label for="Input" class="form-label">Nombre y apellido</label>
+                            <input type="text" class="form-control form-control-lg" id="Input" placeholder="nombre y apellido" aria-label=".form-control-lg">
+                          </div>
+                          <div class="mb-3">
+                            <label for="Input" class="form-label">Numero de telefono</label>
+                            <input type="number" class="form-control form-control-lg" id="Input" placeholder="+54 11" aria-label=".form-control-lg">
+                          </div>
+                          <div class="mb-3">
+                            <label for="Textarea" class="form-label">Escribi tu consulta</label>
+                            <textarea class="form-control form-control-lg" id="Textarea" rows="3" aria-label=".form-control-lg"></textarea>
+                          </div>
+                          <div class="col-12">
+                            <button class="submit__btn  btn btn-dark" type="submit">Enviar</button>
+                          </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<!--fin de main-->
+<!--footer-->
+<footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 footer__container">
+          <div class="social">
+            <h3 class="footer__title">Seguinos!</h3>
+            <div class="social__container">
+              <a class="social__anchor" target="_blank" href="https://www.instagram.com/p/0inzLwL7tZ/?utm_source=ig_web_copy_link"><img class="social__img1" src="../imagenes/instalogo-removebg-preview.png" alt="Instagram"></a>
+            </div>
+            <div class="social__container">
+              <a href="#"><img class="social__img2" src="../imagenes/wpplogo.png" alt="Whatsapp"></a>
+            </div>
+          </div>
+          <div class="newsletter">
+            <h3 class="footer__title">Newsletter</h3>
+            <p class="newsletter__p">Se el primero en enterarte de nuevos modelos, eventos y promociones exclusivas para la comunidad.</p>
+            <form class="newsletter__form" action="#" enctype="multipart/form-data" method="get">
+                <input class="newsletter__input" type="email" name="email" placeholder="Ingresa tu correo electronico" id="email">
+                <input class="newsletter__input2" type="submit" value="Enviar">
+            </form>
+          </div>
+          <div class="menu">
+            <h3 class="footer__title">Menu de navegacion</h3>
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__anchor" href="./lentesdesol.html">Lentes de sol</a></li>
+                    <li class="menu__item"><a class="menu__anchor" href="./lentesdevista.html">Lentes de vista</a></li>
+                    <li class="menu__item"><a class="menu__anchor" href="./lentesdecontacto.html">Lentes de contacto</a></li>
+                    <li class="menu__item"><a class="menu__anchor" href="#">Contacto</a></li>
+                </ul>
+            </nav>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!--fin de footer-->
+<!--script boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

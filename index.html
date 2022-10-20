@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Optica Saracco</title>
+    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./estilos/styles.css">
 </head>
 <body>
-    <!--header-->
+<!--header-->
     <header class="header">
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
@@ -85,19 +91,19 @@
     <section>
       <div class="container-fluid text-center mt-4 infocard__container">
         <div class="row">
-          <div class="col-lg-4 infocard infocard--1">
+          <div data-aos="zoom-out" class="col-lg-4 infocard infocard--1 ">
             <h3 class="infocard__h3">Sucursal</h3>
             <iframe class="infocard__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.3906940233924!2d-58.44594268415735!3d-34.56897956316911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c6e97c0be5%3A0x318e46919734750d!2s%C3%93ptica%20Saracco!5e0!3m2!1ses-419!2sar!4v1666191437936!5m2!1ses-419!2sar" width="95%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p class="infocard__p">Nos encontramos en Federico Lacroze 2332, entre Avenida cabildo y 3 de febrero.</p>
           </div>
-          <div class="col-lg-4 infocard infocard--2">
+          <div data-aos="zoom-out" class="col-lg-4 infocard infocard--2">
             <h3 class="infocard__h3">Seguinos!</h3>
             <a href="https://www.instagram.com/optica.saracco/" target="_blank">
               <img class="infocard__img" src="./imagenes/instagram.jpg" alt="Instagram">
             </a>
             <p class="infocard__p">No te olvides de segurinos en nuestras redes para no perderte de ninguna novedad.</p>
           </div>
-          <div class="col-lg-4 infocard infocard--3">
+          <div data-aos="zoom-out"  class="col-lg-4 infocard infocard--3">
             <h3 class="infocard__h3">Ofertas</h3>
             <a href="" target="_blank">
               <img class="infocard__img" src="./imagenes/lentes.jpg" alt="Ofertas">
@@ -108,8 +114,8 @@
       </div>
     </section>
 </main>
-    <!--fin de main-->
-    <!--footer-->
+<!--fin de main-->
+<!--footer-->
     <footer class="footer">
       <div class="container-fluid">
         <div class="row">
@@ -146,8 +152,12 @@
         </div>
       </div>
     </footer>
-    <!--fin de footer-->
-    <!--script boostrap-->
+ <!--fin de footer-->
+ <!--scripts-->
+ <script>
+  AOS.init();
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

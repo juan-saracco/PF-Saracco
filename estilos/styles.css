@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 /*fin de reset*/
+
+/*index*/
+
 /*header*/
 
 .navbar{
@@ -19,7 +22,7 @@
 
 .header__icon{
     font-size: 3.5rem;
-
+    font-family: 'Public Sans', sans-serif;
 }
 
 .header__div{
@@ -187,11 +190,62 @@
    font-size: xx-large;
    color: black;
 }
+
+.menu__anchor:hover{
+    color: coral;
+}
 /*fin de footer*/
+/*fin de index*/
+/*contacto*/
+
+.contact__container {
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form__title {
+    height: 30rem;
+}
+
+.contact__h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+.contact__p{
+    text-align: center;
+    font-size: 3rem;
+   
+    
+}
+.contact__p2{
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.form__container{
+  height: 40rem;
+  margin-bottom: 1rem;
+}
+
+.submit__btn{
+    height: 3rem;
+    width: 10rem;
+}
+
+.form-label{
+    font-size: 2rem;
+}
+/*fin de contacto*/
 
 /*media queries*/
 
 @media screen and (max-width: 1024px){
+
+    /*index*/
     
     .carousel__img{
         height: 50rem;
@@ -248,10 +302,31 @@
         height: 15rem;
         width: 80%;
     }
+
+    /*fin de index*/
+    /*contacto*/
+    .contact__p{
+        text-align: center;
+        font-size: 2rem;
+       
+        
+    }
+    .contact__p2{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .form-label{
+        font-size: 1.5rem;
+    }
+
+    /*fin de contacto*/
 }
 
 
 @media screen and (max-width: 768px){
+
+    /*index*/
     
     .carousel__img{
         height: 30rem;
@@ -390,11 +465,45 @@
         height: 5rem;
      }
 
+     /*fin de index*/
+     /*contacto*/
+
+     .form__title{
+        height: auto;
+     }
+
+     .contact__h1 {
+        text-align: center;
+        font-size: 4rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact__p{
+        text-align: center;
+        font-size: 2rem;
+       
+        
+    }
+    .contact__p2{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .form-label{
+        font-size: 1.5rem;
+    }
+
+    
+     /*fin de contacto*/
+
 
 }
 
 
 @media screen and (max-width: 425px){
+
+    /*index*/
     
     .p-5{
         padding: 0!important;
@@ -491,7 +600,6 @@
      }
 
      .menu__item{
-        background-color: rgba(255, 115, 0, 0.651);
         margin: 1rem;
      }
 
@@ -499,6 +607,36 @@
         font-size: 1.5rem;
         color: black;
      }
+
+     /*fin de index*/
+     /*contacto*/
+
+     .form__container{
+        margin-bottom: 1rem;
+        height: 35rem;
+     }
+
+     .contact__h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact__p{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .contact__p2{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .form-label{
+        font-size: 1.5rem;
+    }
+
+     /*fin de contacto*/
 }
 
 /*fin de media queries*/
