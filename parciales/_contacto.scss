@@ -1,0 +1,42 @@
+.contact__container {
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .contact__container {
+        height: 30rem;
+
+        &__h1 {
+            text-align: center;
+            font-size: 5rem;
+            margin-bottom: 4rem;
+        }
+    
+        &__p{
+            text-align: center;
+            font-size: 3rem;
+        }
+        
+        &__p2{
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+    
+    .form__container{
+      height: 40rem;
+      margin-bottom: 1rem;
+
+      &__btn{
+          height: 3rem;
+          width: 10rem;
+      }
+      
+      &__label{
+          font-size: 2rem;
+      }
+    }
+}
+
+/*fin de contacto*/

@@ -1,0 +1,122 @@
+@media screen and (max-width: 768px){
+
+    /*index*/
+
+    /*main*/
+
+    .main{
+
+        /*section carousel*/  
+
+        .carousel{
+
+            &__img{
+                height: 30rem;
+                object-fit: cover;
+            }
+        
+            &__arrow{
+                width: 20%;
+            }
+        }
+
+        /*fin de section carousel*/
+
+        /*section infocard*/
+    
+        .infocard__container{
+    
+            .infocard{
+            
+               &__img{
+                   height: 20rem;
+               }
+            
+               &__map{
+                   height: 20rem;
+                   padding-left: 1.5rem;
+               }
+            }
+        }
+        
+        /*fin de section infocard*/
+    }
+
+    /*fin de main*/
+
+    /*footer*/
+
+    .footer__container{
+
+        height: 26rem;
+    
+        .footer__title{
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social{
+            margin-top: 2rem;
+
+            &__img1{
+                height: 7rem;
+                width: 7rem;  
+            }
+            
+            &__img2{
+                height: 5rem;
+                width: 5rem;
+            }
+        }
+    
+        .newsletter {
+            margin-top: 2rem;
+
+            &__input{
+               font-size: .9rem;
+            }
+        }
+        
+         .menu {
+            margin-top: 2rem;
+
+            &__item{
+                margin-bottom: 2.9rem;
+            }
+        }
+    }
+
+    /*fin de footer*/
+
+    /*fin de index*/
+
+    /*contacto*/
+
+     .form__title{
+        height: auto;
+     }
+
+     .contact__h1 {
+        text-align: center;
+        font-size: 4rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact__p{
+        text-align: center;
+        font-size: 2rem;
+       
+        
+    }
+    .contact__p2{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .form-label{
+        font-size: 1.5rem;
+    }
+}
+
+    /*fin de contacto*/
