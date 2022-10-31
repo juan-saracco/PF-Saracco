@@ -100,30 +100,41 @@
 
      /*contacto*/
 
-     .form__container{
+     .contact__container{
         margin-bottom: 1rem;
-        height: 35rem;
-     }
+        height: 50rem;
+        align-items: center;
 
-     .contact__h1 {
-        text-align: center;
-        font-size: 2.5rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
+        .contact{
+            padding: .5rem;
+
+            &__h1 {
+               text-align: center;
+               font-size: 2.3rem;
+               margin-bottom: 1rem;
+           }
+        
+           &__p{
+               font-size: 1.3rem;
+           }
+
+           &__p2{
+               font-size: 1.3rem;
+           }
+        }
+
+        .form__container{
+
+            margin-top: 2rem;
+            width: 90%;
+
+            .form__label{
+                font-size: 1.3rem;
+            }
+
+        }
     }
 
-    .contact__p{
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
-    .contact__p2{
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
-
-    .form-label{
-        font-size: 1.5rem;
-    }
 }
 
      /*fin de contacto*/

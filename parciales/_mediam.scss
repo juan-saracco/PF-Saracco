@@ -81,7 +81,7 @@
             margin-top: 2rem;
 
             &__item{
-                margin-bottom: 2.9rem;
+                margin-bottom: 2.8rem;
             }
         }
     }
@@ -92,26 +92,24 @@
 
     /*contacto*/
 
-     .form__title{
-        height: auto;
-     }
+    .contact__container{
 
-     .contact__h1 {
-        text-align: center;
-        font-size: 4rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
-    }
+        .contact{
 
-    .contact__p{
-        text-align: center;
-        font-size: 2rem;
-       
-        
-    }
-    .contact__p2{
-        text-align: center;
-        font-size: 2rem;
+            &__h1{ 
+                padding: 1rem;
+                margin-bottom: 1rem!important;
+                margin-top: 1rem!important;
+            }
+            
+            &__p{
+                font-size: 2rem;
+            }
+            
+            &__p2{
+                font-size: 2rem;
+            }
+        }
     }
 
     .form-label{

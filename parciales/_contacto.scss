@@ -1,26 +1,27 @@
 .contact__container {
-    height: 80rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
-    .contact__container {
-        height: 30rem;
+    .contact {
+        height: 20rem;
 
         &__h1 {
             text-align: center;
-            font-size: 5rem;
-            margin-bottom: 4rem;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
         }
     
         &__p{
             text-align: center;
-            font-size: 3rem;
+            font-size: 1.5rem;
         }
         
         &__p2{
             text-align: center;
-            font-size: 3rem;
+            font-size: 1.5rem;
         }
     }
     

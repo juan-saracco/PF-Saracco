@@ -156,13 +156,17 @@
 
     /*contacto*/
     
-    .contact__p{
-        text-align: center;
-        font-size: 2rem;
-    }
-    .contact__p2{
-        text-align: center;
-        font-size: 2rem;
+    .contact__container{
+
+        .contact{
+
+            &__p{
+                font-size: 2rem;
+            }
+            &__p2{
+                font-size: 2rem;
+            }
+        }
     }
 
     .form-label{

@@ -9,12 +9,13 @@
 .navbar {
   background-color: rgba(255, 115, 0, 0.514); }
   .navbar .header__font {
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
     margin: 0 2rem; }
   .navbar .header__icon {
-    font-size: 3.5rem;
-    font-family: 'Public Sans', sans-serif; }
+    font-size: 3rem;
+    font-family: 'Public Sans', sans-serif;
+    padding-left: 1rem; }
   .navbar .header__div {
     flex-grow: 0; }
 
@@ -25,7 +26,7 @@
   .main .carousel__slider {
     background-color: black !important; }
   .main .carousel__img {
-    height: 70rem;
+    height: 45rem;
     object-fit: cover;
     position: relative; }
   .main .carousel__span {
@@ -54,7 +55,7 @@
     margin-bottom: 3rem; }
     .main .infocard__h3 {
       padding: 1rem;
-      font-size: 3rem; }
+      font-size: 2rem; }
     .main .infocard__map {
       padding-left: 1.5rem; }
     .main .infocard__img {
@@ -62,7 +63,7 @@
       width: 95%;
       object-fit: cover; }
     .main .infocard__p {
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding: 1rem; }
   .main .infocard:hover {
     background-color: rgba(255, 115, 0, 0.514); }
@@ -99,16 +100,15 @@
     margin-top: 2rem; }
     .footer__container .newsletter__p {
       width: 80%;
-      font-size: 2rem; }
+      font-size: 1.3rem;
+      margin-top: 1rem; }
     .footer__container .newsletter__form {
-      width: 100%;
-      height: 100%; }
+      width: 100%; }
     .footer__container .newsletter__input {
-      font-size: 1.4rem;
       width: 80%;
       text-align: center;
       display: block;
-      margin: auto; }
+      margin: 1rem auto; }
     .footer__container .newsletter__input2 {
       font-size: larger;
       width: 80%;
@@ -121,20 +121,47 @@
     align-items: center;
     margin-top: 2rem;
     width: 33%; }
-    .footer__container .menu__nav {
-      width: 55%; }
     .footer__container .menu__list {
       list-style: none; }
     .footer__container .menu__item {
-      margin-bottom: 1.5rem; }
+      margin-bottom: 1.2rem;
+      margin-top: .5rem; }
     .footer__container .menu__anchor {
       text-decoration: none;
-      font-size: xx-large;
+      font-size: 1.5rem;
       color: black; }
     .footer__container .menu__anchor:hover {
       color: coral; }
 
 /*fin de footer*/
+.contact__container {
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  .contact__container .contact {
+    height: 20rem; }
+    .contact__container .contact__h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem; }
+    .contact__container .contact__p {
+      text-align: center;
+      font-size: 1.5rem; }
+    .contact__container .contact__p2 {
+      text-align: center;
+      font-size: 1.5rem; }
+  .contact__container .form__container {
+    height: 40rem;
+    margin-bottom: 1rem; }
+    .contact__container .form__container__btn {
+      height: 3rem;
+      width: 10rem; }
+    .contact__container .form__container__label {
+      font-size: 2rem; }
+
+/*fin de contacto*/
 @media screen and (max-width: 1024px) {
   /*index*/
   /*header*/
@@ -212,11 +239,9 @@
   /*fin de footer*/
   /*fin de index*/
   /*contacto*/
-  .contact__p {
-    text-align: center;
+  .contact__container .contact__p {
     font-size: 2rem; }
-  .contact__p2 {
-    text-align: center;
+  .contact__container .contact__p2 {
     font-size: 2rem; }
   .form-label {
     font-size: 1.5rem; } }
@@ -262,22 +287,17 @@
     .footer__container .menu {
       margin-top: 2rem; }
       .footer__container .menu__item {
-        margin-bottom: 2.9rem; }
+        margin-bottom: 2.8rem; }
   /*fin de footer*/
   /*fin de index*/
   /*contacto*/
-  .form__title {
-    height: auto; }
-  .contact__h1 {
-    text-align: center;
-    font-size: 4rem;
+  .contact__container .contact__h1 {
     padding: 1rem;
-    margin-bottom: 1rem; }
-  .contact__p {
-    text-align: center;
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important; }
+  .contact__container .contact__p {
     font-size: 2rem; }
-  .contact__p2 {
-    text-align: center;
+  .contact__container .contact__p2 {
     font-size: 2rem; }
   .form-label {
     font-size: 1.5rem; } }
@@ -334,49 +354,24 @@
   /*fin de footer*/
   /*fin de index*/
   /*contacto*/
-  .form__container {
+  .contact__container {
     margin-bottom: 1rem;
-    height: 35rem; }
-  .contact__h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 1rem;
-    margin-bottom: 1rem; }
-  .contact__p {
-    font-size: 1.5rem;
-    padding: 1rem; }
-  .contact__p2 {
-    font-size: 1.5rem;
-    padding: 1rem; }
-  .form-label {
-    font-size: 1.5rem; } }
-
-/*fin de contacto*/
-/*vistas*/
-.contact__container {
-  height: 80rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; }
-  .contact__container .contact__container {
-    height: 30rem; }
-    .contact__container .contact__container__h1 {
-      text-align: center;
-      font-size: 5rem;
-      margin-bottom: 4rem; }
-    .contact__container .contact__container__p {
-      text-align: center;
-      font-size: 3rem; }
-    .contact__container .contact__container__p2 {
-      text-align: center;
-      font-size: 3rem; }
-  .contact__container .form__container {
-    height: 40rem;
-    margin-bottom: 1rem; }
-    .contact__container .form__container__btn {
-      height: 3rem;
-      width: 10rem; }
-    .contact__container .form__container__label {
-      font-size: 2rem; }
+    height: 50rem;
+    align-items: center; }
+    .contact__container .contact {
+      padding: .5rem; }
+      .contact__container .contact__h1 {
+        text-align: center;
+        font-size: 2.3rem;
+        margin-bottom: 1rem; }
+      .contact__container .contact__p {
+        font-size: 1.3rem; }
+      .contact__container .contact__p2 {
+        font-size: 1.3rem; }
+    .contact__container .form__container {
+      margin-top: 2rem;
+      width: 90%; }
+      .contact__container .form__container .form__label {
+        font-size: 1.3rem; } }
 
 /*fin de contacto*/
