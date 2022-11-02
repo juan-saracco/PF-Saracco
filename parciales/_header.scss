@@ -9,6 +9,10 @@
         margin: 0 2rem;
     }
 
+    .header__font:hover{
+        color: coral;;
+    }
+
     .header__icon{
         font-size: 3rem;
         font-family: 'Public Sans', sans-serif;
@@ -18,6 +22,7 @@
     .header__div{
         flex-grow: 0;
     }
+
 }
 
 /*fin de header*/
