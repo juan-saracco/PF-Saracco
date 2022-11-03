@@ -2,7 +2,7 @@
 .models__grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 85vh repeat(3, 50vh);
+    grid-template-rows: 60vh repeat(3, 50vh);
     grid-template-areas: "titulo titulo titulo"
                          "img1 img2 img3"
                          "img4 img5 img6"
@@ -16,11 +16,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     
     .models__banner{
         object-fit: cover;
-        width: 100%;
         height: 100%;
+        width: 100%;
     }
 }
 

@@ -172,6 +172,34 @@
     .form-label{
         font-size: 1.5rem;
     }
-}
 
     /*fin de contacto*/
+
+    /*lentes de contacto*/
+
+    .models__container{
+        padding: 0;
+    }
+
+    @for $i from 1 to 10 {
+        .models__img#{$i}{
+        grid-area:img+$i;
+        width: 85%;
+        height: 60%;
+        object-fit: cover;
+       }
+   }
+    
+    /*fin de lentes de contacto*/
+
+    /*sol y vista*/
+
+    @for $i from 1 to 10 {
+        .lentes__img#{$i}{
+        width: 70%;
+       }
+    }
+
+    /*fin de sol y vista*/
+
+}

@@ -170,7 +170,7 @@
 .models__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 85vh repeat(3, 50vh);
+  grid-template-rows: 60vh repeat(3, 50vh);
   grid-template-areas: "titulo titulo titulo" "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
   background-color: antiquewhite; }
 
@@ -181,8 +181,8 @@
   align-items: center; }
   .models__title .models__banner {
     object-fit: cover;
-    width: 100%;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
 
 .models__container {
   display: flex;
@@ -371,9 +371,78 @@
   .contact__container .contact__p2 {
     font-size: 2rem; }
   .form-label {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  /*fin de contacto*/
+  /*lentes de contacto*/
+  .models__container {
+    padding: 0; }
+  .models__img1 {
+    grid-area: img1;
+    width: 85%;
+    height: 60%;
+    object-fit: cover; }
+  .models__img2 {
+    grid-area: img2;
+    width: 85%;
+    height: 60%;
+    object-fit: cover; }
+  .models__img3 {
+    grid-area: img3;
+    width: 85%;
+    height: 60%;
+    object-fit: cover; }
+  .models__img4 {
+    grid-area: img4;
+    width: 85%;
+    height: 60%;
+    object-fit: cover; }
+  .models__img5 {
+    grid-area: img5;
+    width: 85%;
+    height: 60%;
+    object-fit: cover; }
+  .models__img6 {
+    grid-area: img6;
+    width: 85%;
+    height: 60%;
+    object-fit: cover; }
+  .models__img7 {
+    grid-area: img7;
+    width: 85%;
+    height: 60%;
+    object-fit: cover; }
+  .models__img8 {
+    grid-area: img8;
+    width: 85%;
+    height: 60%;
+    object-fit: cover; }
+  .models__img9 {
+    grid-area: img9;
+    width: 85%;
+    height: 60%;
+    object-fit: cover; }
+  /*fin de lentes de contacto*/
+  /*sol y vista*/
+  .lentes__img1 {
+    width: 70%; }
+  .lentes__img2 {
+    width: 70%; }
+  .lentes__img3 {
+    width: 70%; }
+  .lentes__img4 {
+    width: 70%; }
+  .lentes__img5 {
+    width: 70%; }
+  .lentes__img6 {
+    width: 70%; }
+  .lentes__img7 {
+    width: 70%; }
+  .lentes__img8 {
+    width: 70%; }
+  .lentes__img9 {
+    width: 70%; }
+  /*fin de sol y vista*/ }
 
-/*fin de contacto*/
 @media screen and (max-width: 768px) {
   /*index*/
   /*main*/
@@ -427,9 +496,44 @@
   .contact__container .contact__p2 {
     font-size: 2rem; }
   .form-label {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  /*fin de contacto*/
+  /*lentes de contacto*/
+  .models__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40vh repeat(4, 1fr);
+    grid-template-areas: "titulo titulo" "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img9"; }
+  .container--9 {
+    grid-column: span 2;
+    width: 80%;
+    height: 80%;
+    margin-left: 5rem; }
+  /*fin de lentes de contacto*/
+  /*sol y vista*/
+  .lentes__img1 {
+    height: 100%; }
+  .lentes__img2 {
+    height: 100%; }
+  .lentes__img3 {
+    height: 100%; }
+  .lentes__img4 {
+    height: 100%; }
+  .lentes__img5 {
+    height: 100%; }
+  .lentes__img6 {
+    height: 100%; }
+  .lentes__img7 {
+    height: 100%; }
+  .lentes__img8 {
+    height: 100%; }
+  .lentes__img9 {
+    height: 100%; }
+  .margin--vista {
+    margin-bottom: 0; }
+  .container--9-s {
+    margin-bottom: 3rem; }
+  /*fin de sol y vista*/ }
 
-/*fin de contacto*/
 @media screen and (max-width: 425px) {
   /*index*/
   /*main*/
@@ -499,6 +603,51 @@
       margin-top: 2rem;
       width: 90%; }
       .contact__container .form__container .form__label {
-        font-size: 1.3rem; } }
-
-/*fin de contacto*/
+        font-size: 1.3rem; }
+  /*fin de contacto*/
+  /*lentes de contacto*/
+  .models__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "titulo" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9"; }
+  .models__title {
+    height: 18rem; }
+  .models__container {
+    width: 85%;
+    height: 85%;
+    margin: auto; }
+  .container--9 {
+    grid-column: span 1; }
+  /*fin de lentes de contacto*/
+  /*sol y vista*/
+  .lentes__img1 {
+    width: 50%;
+    height: 30%; }
+  .lentes__img2 {
+    width: 50%;
+    height: 30%; }
+  .lentes__img3 {
+    width: 50%;
+    height: 30%; }
+  .lentes__img4 {
+    width: 50%;
+    height: 30%; }
+  .lentes__img5 {
+    width: 50%;
+    height: 30%; }
+  .lentes__img6 {
+    width: 50%;
+    height: 30%; }
+  .lentes__img7 {
+    width: 50%;
+    height: 30%; }
+  .lentes__img8 {
+    width: 50%;
+    height: 30%; }
+  .lentes__img9 {
+    width: 50%;
+    height: 30%; }
+  .container--9-s {
+    height: 16rem;
+    margin-bottom: 2rem; }
+  /*fin de sol y vista*/ }

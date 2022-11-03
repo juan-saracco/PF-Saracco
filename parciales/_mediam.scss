@@ -115,6 +115,51 @@
     .form-label{
         font-size: 1.5rem;
     }
+
+/*fin de contacto*/
+
+/*lentes de contacto*/
+
+.models__grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40vh repeat(4, 1fr);
+    grid-template-areas: "titulo titulo"
+                         "img1 img2"
+                         "img3 img4"
+                         "img5 img6"
+                         "img7 img8"
+                         "img9 img9";
+                                         
 }
 
-    /*fin de contacto*/
+.container--9{
+
+    grid-column: span 2;
+    width: 80%;
+    height: 80%;
+    margin-left: 5rem;
+}
+
+/*fin de lentes de contacto*/
+
+/*sol y vista*/
+
+@for $i from 1 to 10 {
+    .lentes__img#{$i}{
+    height: 100%;
+   }
+}
+
+.margin--vista{
+    margin-bottom: 0;
+}
+
+.container--9-s{
+    margin-bottom: 3rem;
+}
+
+/*fin de sol y vista*/
+
+}
+
+    

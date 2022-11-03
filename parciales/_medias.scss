@@ -135,6 +135,56 @@
         }
     }
 
+    /*fin de contacto*/
+
+    /*lentes de contacto*/
+
+.models__grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "titulo"
+                         "img1"
+                         "img2"
+                         "img3"
+                         "img4"
+                         "img5"
+                         "img6"
+                         "img7"
+                         "img8"
+                         "img9";
+                                         
+}
+.models__title{
+    height: 18rem;
 }
 
-     /*fin de contacto*/
+.models__container{
+    width: 85%;
+    height: 85%;
+    margin: auto;
+}
+
+.container--9{
+    grid-column: span 1;
+}
+/*fin de lentes de contacto*/
+
+ /*sol y vista*/
+
+ @for $i from 1 to 10 {
+    .lentes__img#{$i}{
+    width: 50%;
+    height: 30%;
+   }
+}
+
+.container--9-s{
+    height: 16rem;
+    margin-bottom: 2rem;
+}
+
+/*fin de sol y vista*/
+
+}
+
+
