@@ -1,14 +1,14 @@
 /*lentes de contacto*/
-@import "./variables";
-
 .models__grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50vh repeat(3, 40vh);
-    grid-template-areas: "titulo  titulo titulo titulo"
-                         "aside  img1 img2 img3"
-                         "aside  img4 img5 img6"
-                         "aside  img7 img8 img9";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 85vh repeat(3, 50vh);
+    grid-template-areas: "titulo titulo titulo"
+                         "img1 img2 img3"
+                         "img4 img5 img6"
+                         "img7 img8 img9";
+    background-color: antiquewhite;
+                                            
 }
 
 .models__title{
@@ -26,36 +26,21 @@
 
 .models__container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 10px;
     padding: 1rem;
-
 }
 
 @for $i from 1 to 10 {
      .models__img#{$i}{
      grid-area:img+$i;
-     width: 80%;
-     height: 80%;
+     width: 82%;
+     height: 100%;
      object-fit: cover;
     }
 }
 
-.models__asidenav{
-    grid-area: aside;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 80%;
-
-    .dropdown-toggle{
-        background-color: white;
-        color: black;
-        width: 15vw;
-
-    }
-    .dropdown-item {
-        width: 15vw;
-    }
-}

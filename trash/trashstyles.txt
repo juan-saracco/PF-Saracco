@@ -1,3 +1,15 @@
 )XhHgqeql2gUjFlw3Cm^ 
 
 password hostinger
+
+.models__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50vh repeat(3, 50vh);
+    grid-template-areas: "titulo titulo titulo"
+                         "img1 img2 img3"
+                         "img4 img5 img6"
+                         "img7 img8 img9";
+    background-color: antiquewhite;
+                                            
+}
