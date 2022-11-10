@@ -1,0 +1,89 @@
+.main{
+    background-color: antiquewhite;
+
+    .carousel{
+
+        &__img{
+            height: 90vh;
+            object-fit: cover;
+        }
+
+        &__card{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 20rem;
+            width: 25rem;
+            bottom: 10rem;
+            left: 7rem;
+            background-color: rgb(241, 177, 124);
+            border-radius: 10px;
+            padding: 2rem;
+            overflow: hidden;
+            opacity: .75;
+        }
+    
+        &__span{
+            font-size: 2.5em;
+            color: black;
+        }
+    
+        
+        &__btn{
+            height: 3rem;
+            width: 15rem;
+            font-size: 1.5em;
+        }
+    
+        &__arrow{
+            width: 6%;
+        }
+    }
+
+    .infocard{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        overflow: hidden;
+
+        &__h3{
+            padding: 1rem;
+            font-size: 2rem;
+        }
+
+        &__map{
+            padding-left: 1.5rem;
+        }
+        
+        &__img{
+            height: 100%;
+            width: 95%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        &__p{
+            font-size: 1.5em;
+            padding: 1rem 0 1rem 0;
+        }
+
+        &__form {
+            height: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__input{
+            width: 80%;
+            height: 3rem;
+            text-align: center;
+        }
+    }
+
+    .infocard:hover{
+        background-color: rgba(255, 115, 0, 0.514);
+    }
+}

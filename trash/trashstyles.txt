@@ -13,3 +13,181 @@ password hostinger
     background-color: antiquewhite;
                                             
 }
+
+@import "./variables";
+/*header*/
+
+.header{
+
+    &__background{
+        background-color: rgba(255, 115, 0, 0.514);
+    }
+    
+    &__a{
+        font-size: $fuentenav;
+        margin: 0 .5rem;
+    }
+    
+    &__a:hover{
+        color: coral;
+    }
+    
+    &__icon{
+        font-size: 2em;
+        font-family: 'Public Sans', sans-serif;
+        padding-left: 1rem;
+    }
+    
+    &__navbar{
+      flex-grow: 0;
+    }
+}
+
+
+
+/*fin de header*/
+
+footer respaldo
+
+<div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 footer__container">
+            <div class="social">
+              <h3 class="footer__title">Seguinos!</h3>
+              <div class="social__container">
+                <a class="social__anchor" target="_blank" href="https://www.instagram.com/p/0inzLwL7tZ/?utm_source=ig_web_copy_link"><img class="social__img1" src="./imagenes/instalogo-removebg-preview.png" alt="Instagram"></a>
+              </div>
+              <div class="social__container">
+                <a href="https://wa.me/5491167010616" target="_blank"><img class="social__img2" src="./imagenes/wpplogo.png" alt="Whatsapp"></a>
+              </div>
+            </div>
+            <div class="newsletter">
+              <h3 class="footer__title">Newsletter</h3>
+              <p class="newsletter__p">Se el primero en enterarte de nuevos modelos, eventos y promociones exclusivas para la comunidad.</p>
+              <form class="newsletter__form" action="#" enctype="multipart/form-data" method="get">
+                  <input class="newsletter__input" type="email" name="email" placeholder="Ingresa tu correo electronico" id="email">
+                  <input class="newsletter__input2" type="submit" value="Enviar">
+              </form>
+            </div>
+            <div class="menu">
+              <h3 class="footer__title">Menu de navegacion</h3>
+              <nav class="menu__nav">
+                  <ul class="menu__list">
+                      <li class="menu__item"><a class="menu__anchor" href="./vistas/lentesdesol.html">Lentes de sol</a></li>
+                      <li class="menu__item"><a class="menu__anchor" href="./vistas/lentesdevista.html">Lentes de vista</a></li>
+                      <li class="menu__item"><a class="menu__anchor" href="./vistas/lentesdecontacto.html">Lentes de contacto</a></li>
+                      <li class="menu__item"><a class="menu__anchor" href="./vistas/contacto.html">Contacto</a></li>
+                  </ul>
+              </nav>    
+            </div>
+          </div>
+        </div>
+      </div>
+
+      footer css
+
+      /*footer*/
+
+.footer__container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 115, 0, 0.514);
+
+    &__title{
+        font-size: 3rem;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        width: 33%;
+        justify-content: space-between;
+
+        &__img1{
+            height: 7rem;
+            width: 7rem;  
+        }
+        
+        &__img2{
+            height: 5rem;
+            width: 5rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        align-items: center;
+        margin-top: 2rem;
+
+        &__p {
+            width: 80%;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+        }
+        
+        &__form{
+               width: 100%;
+        }
+        
+        &__input{
+           width: 80%;
+           text-align: center;
+           display: block;
+           margin: 1rem auto;
+        }
+        
+        &__input2{
+            font-size: larger;
+            width: 80%;
+            text-align: center;
+            display: block;
+            margin: 2rem auto;   
+         }
+    }
+    
+    .menu{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 2rem;
+       width: 33%;
+
+       &__list{
+        list-style:none;
+       }
+
+       &__item{
+        margin-bottom: 1.2rem;
+        margin-top: .5rem;
+       }
+       
+       &__anchor{
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: black;
+       }
+       
+       &__anchor:hover{
+           color: coral;
+       }
+    }
+}
+
+/*fin de footer*/
+
+aos
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>

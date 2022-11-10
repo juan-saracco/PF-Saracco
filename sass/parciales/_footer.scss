@@ -1,0 +1,25 @@
+.footer{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        background-color: $orange;
+    }
+
+    &__img{
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        margin: 0rem 1rem;
+    }
+
+    &__span{
+        font-size: $fuentenav;
+    }
+}
+
+footer > div {
+    padding: 1rem;
+}

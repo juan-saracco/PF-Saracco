@@ -1,0 +1,34 @@
+@import "./variables";
+
+
+.header{
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__background{
+        background-color: $orange;
+    }
+    
+    &__a{
+        font-size: $fuentenav;
+        margin: 0 1rem;
+    }
+    
+    &__a:hover{
+        color: $hovercolor;
+    }
+    
+    &__icon{
+        font-size: 2em;
+        font-family: 'Public Sans', sans-serif;
+        padding-left: 1rem;
+    }
+    
+    &__navbar{
+      flex-grow: 0;
+    }
+}
