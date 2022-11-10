@@ -1,12 +1,18 @@
-.models__grid{
+.models {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 60vh repeat(3, 50vh);
+    grid-template-rows: 95vh repeat(3, 50vh);
     grid-template-areas: "titulo titulo titulo"
                          "img1 img2 img3"
                          "img4 img5 img6"
                          "img7 img8 img9";
     background-color: antiquewhite;
+
+    &__card--contacto{
+
+        left: 7rem;
+        width: 32rem;
+    }
                                             
 }
 
@@ -21,6 +27,7 @@
         object-fit: cover;
         height: 100%;
         width: 100%;
+
     }
 }
 

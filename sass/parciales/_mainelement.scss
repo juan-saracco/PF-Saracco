@@ -4,7 +4,7 @@
     .carousel{
 
         &__img{
-            height: 90vh;
+            height: 100vh;
             object-fit: cover;
         }
 
@@ -21,7 +21,7 @@
             border-radius: 10px;
             padding: 2rem;
             overflow: hidden;
-            opacity: .75;
+            opacity: .9;
         }
     
         &__span{

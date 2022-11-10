@@ -1,0 +1,30 @@
+.models{
+
+    &__title{
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__card{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 22rem;
+        width: 25rem;
+        right: 7rem;
+        background-color: rgb(241, 177, 124);
+        border-radius: 10px;
+        padding: 3rem;
+        opacity: .90;
+    }
+
+    &__h2{
+        font-size: $big;
+    }
+
+    &__p{
+        font-size: $small;
+    }
+}
