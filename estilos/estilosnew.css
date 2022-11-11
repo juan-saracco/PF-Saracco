@@ -13,7 +13,8 @@
 
 .header__a {
   font-size: 1.5em;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+  color: black; }
 
 .header__a:hover {
   color: coral; }
@@ -102,8 +103,15 @@
 .footer__span {
   font-size: 1.5em; }
 
+.footer__padding {
+  padding: 1rem; }
+
 footer > div {
   padding: 1rem; }
+
+.footer__img:hover {
+  transform: translateY(-10px);
+  transition: .5s; }
 
 .contact__container {
   height: 50rem;
@@ -187,60 +195,56 @@ footer > div {
   background-color: white;
   margin: 1rem;
   border-radius: 10px;
-  padding: 1rem; }
+  padding: 1rem;
+  overflow: hidden; }
+
+.models__container:hover {
+  transform: scale(0.9);
+  transition: 1s; }
 
 .models__img1 {
   grid-area: img1;
   width: 82%;
-  height: 100%;
   object-fit: cover; }
 
 .models__img2 {
   grid-area: img2;
   width: 82%;
-  height: 100%;
   object-fit: cover; }
 
 .models__img3 {
   grid-area: img3;
   width: 82%;
-  height: 100%;
   object-fit: cover; }
 
 .models__img4 {
   grid-area: img4;
   width: 82%;
-  height: 100%;
   object-fit: cover; }
 
 .models__img5 {
   grid-area: img5;
   width: 82%;
-  height: 100%;
   object-fit: cover; }
 
 .models__img6 {
   grid-area: img6;
   width: 82%;
-  height: 100%;
   object-fit: cover; }
 
 .models__img7 {
   grid-area: img7;
   width: 82%;
-  height: 100%;
   object-fit: cover; }
 
 .models__img8 {
   grid-area: img8;
   width: 82%;
-  height: 100%;
   object-fit: cover; }
 
 .models__img9 {
   grid-area: img9;
   width: 82%;
-  height: 100%;
   object-fit: cover; }
 
 .models__title {
@@ -314,7 +318,7 @@ footer > div {
     -webkit-transform-origin: top;
     transform-origin: top; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .models {
     grid-template-rows: 90vh repeat(3, 40vh); } }
 
@@ -339,53 +343,28 @@ footer > div {
     font-size: 2rem; }
   .form-label {
     font-size: 1.5rem; }
-  .models__img1 {
-    height: 60%; }
-  .models__img2 {
-    height: 60%; }
-  .models__img3 {
-    height: 60%; }
-  .models__img4 {
-    height: 60%; }
-  .models__img5 {
-    height: 60%; }
-  .models__img6 {
-    height: 60%; }
-  .models__img7 {
-    height: 60%; }
-  .models__img8 {
-    height: 60%; }
-  .models__img9 {
-    height: 60%; }
   .lentes__img1 {
-    height: 7rem;
     width: 70%; }
   .lentes__img2 {
-    height: 7rem;
     width: 70%; }
   .lentes__img3 {
-    height: 7rem;
     width: 70%; }
   .lentes__img4 {
-    height: 7rem;
     width: 70%; }
   .lentes__img5 {
-    height: 7rem;
     width: 70%; }
   .lentes__img6 {
-    height: 7rem;
     width: 70%; }
   .lentes__img7 {
-    height: 7rem;
     width: 70%; }
   .lentes__img8 {
-    height: 7rem;
     width: 70%; }
   .lentes__img9 {
-    height: 7rem;
     width: 70%; } }
 
 @media screen and (max-width: 768px) {
+  .header__background {
+    position: relative; }
   .main .carousel__img {
     height: 30rem;
     object-fit: cover; }
@@ -417,11 +396,20 @@ footer > div {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 40vh repeat(4, 1fr);
     grid-template-areas: "titulo titulo" "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img9"; }
-  .container--9 {
-    grid-column: span 2;
-    width: 80%;
-    height: 80%;
-    margin-left: 5rem; }
+    .models__card {
+      height: 12rem;
+      width: 20rem;
+      right: 4rem;
+      bottom: 3rem;
+      padding: 1rem; }
+    .models__card--vista {
+      left: 5rem; }
+    .models__card--contacto {
+      left: 5rem; }
+    .models__h2 {
+      font-size: 2em; }
+    .models__p {
+      font-size: 1.2em; }
   .lentes__img1 {
     height: 100%; }
   .lentes__img2 {
@@ -441,49 +429,25 @@ footer > div {
   .lentes__img9 {
     height: 100%; }
   .margin--vista {
-    margin-bottom: 0; }
-  .container--9-s {
-    margin-bottom: 3rem; } }
+    margin-bottom: 0; } }
 
 @media screen and (max-width: 425px) {
-  .main .carousel .p-5 {
-    padding: 0 !important; }
+  .header__icon {
+    padding-left: 0rem; }
   .main .carousel__img {
+    height: 30vh; }
+  .main .carousel__card {
+    visibility: hidden; }
+  .main .infocard__container .infocard__h3 {
+    font-size: 1.5rem; }
+  .main .infocard__container .infocard__img {
     height: 15rem; }
-  .main .infocard__container {
-    padding: 0; }
-    .main .infocard__container .infocard__h3 {
-      font-size: 1.5rem; }
-    .main .infocard__container .infocard__img {
-      height: 15rem; }
-    .main .infocard__container .infocard__p {
-      font-size: 1rem; }
-    .main .infocard__container .infocard__map {
-      height: 15rem;
-      padding: 0;
-      width: 100%; }
-  .footer__container {
-    flex-direction: column;
-    height: 100%; }
-    .footer__container .social {
-      margin-top: 1rem;
-      width: 100%; }
-      .footer__container .social__img1 {
-        height: 5rem;
-        width: 5rem;
-        margin-bottom: 1rem; }
-      .footer__container .social__img2 {
-        height: 4rem;
-        width: 4rem;
-        margin-bottom: 0; }
-    .footer__container .newsletter {
-      width: 100%; }
-      .footer__container .newsletter__p {
-        font-size: 1rem; }
-    .footer__container .menu {
-      width: 100%; }
-      .footer__container .menu__item {
-        margin: 1rem; }
+  .main .infocard__container .infocard__p {
+    font-size: 1rem; }
+  .main .infocard__container .infocard__map {
+    height: 15rem;
+    padding: 0;
+    width: 100%; }
   .contact__container {
     margin-bottom: 1rem;
     height: 50rem;
@@ -505,16 +469,16 @@ footer > div {
         font-size: 1.3rem; }
   .models {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-template-areas: "titulo" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9"; }
-  .models__title {
-    height: 18rem; }
-  .models__container {
-    width: 85%;
-    height: 85%;
-    margin: auto; }
-  .container--9 {
-    grid-column: span 1; }
+    .models__card {
+      visibility: hidden; }
+    .models__title {
+      height: 18rem; }
+    .models__container {
+      width: 85%;
+      height: 85%;
+      margin: auto; }
   .lentes__img1 {
     width: 50%;
     height: 30%; }
@@ -541,7 +505,4 @@ footer > div {
     height: 30%; }
   .lentes__img9 {
     width: 50%;
-    height: 30%; }
-  .container--9-s {
-    height: 16rem;
-    margin-bottom: 2rem; } }
+    height: 30%; } }

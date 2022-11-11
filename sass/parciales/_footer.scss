@@ -18,8 +18,17 @@
     &__span{
         font-size: $small;
     }
+
+    &__padding{
+        padding: 1rem;
+    }
 }
 
 footer > div {
     padding: 1rem;
+}
+
+.footer__img:hover{
+    transform: translateY(-10px);
+    transition: .5s;
 }
