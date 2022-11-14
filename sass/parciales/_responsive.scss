@@ -4,8 +4,6 @@
 
         grid-template-rows: 90vh repeat(3, 40vh);
     }
-
-
 }
 
 
@@ -14,11 +12,10 @@
     .header{
     
             &__a{
-                font-size: 1.5em;
-                margin: 0 0.8rem;
+                font-size: 1.4em;
+                margin: 0 .5rem;
             }
      }
-
 
     .main{
 
@@ -52,16 +49,16 @@
     .contact{
 
         &__p{
-                font-size: 2rem;
+                font-size: 1.5em;
         }
 
         &__p2{
-               font-size: 2rem;
+               font-size: 1.5em;
         }
      }
 
     .form-label{
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     @for $i from 1 to 10 {
@@ -140,6 +137,10 @@
         font-size: 1.5rem;
     }
 
+.contact{
+    margin-bottom: 1rem;
+}
+
 
 .models{
     grid-template-columns: repeat(2, 1fr);
@@ -187,7 +188,6 @@
 .margin--vista{
     margin-bottom: 0;
 }
-
 }
 
 @media screen and (max-width: 425px){
@@ -195,7 +195,6 @@
     .header__icon{
         padding-left: 0rem;
     }
-
 
     .main{
         .carousel{
@@ -234,40 +233,38 @@
         }
     }
 
-     .contact__container{
+     .contact {
         margin-bottom: 1rem;
         height: 50rem;
         align-items: center;
 
-        .contact{
+        &__container{
             padding: .5rem;
+        }
 
-            &__h1 {
+        &__h1 {
                text-align: center;
                font-size: 2.3rem;
                margin-bottom: 1rem;
-           }
+        }
         
-           &__p{
+        &__p{
                font-size: 1.3rem;
-           }
-
-           &__p2{
-               font-size: 1.3rem;
-           }
         }
 
-        .form__container{
-
+        &__p2{
+               font-size: 1.3rem;
+        }
+        
+        &__form{
             margin-top: 2rem;
             width: 90%;
+        }
 
-            .form__label{
+        &__label{
                 font-size: 1.3rem;
-            }
         }
     }
-
 
 .models{
     grid-template-columns: 1fr;
@@ -287,19 +284,17 @@
          visibility: hidden;
         }
 
-        &__title{
+    &__title{
             height: 18rem;
-        }
+    }
         
-        &__container{
+    &__container{
             width: 85%;
             height: 85%;
             margin: auto;
-        }
     }
+}
                                          
-
-
  @for $i from 1 to 10 {
     .lentes__img#{$i}{
     width: 50%;

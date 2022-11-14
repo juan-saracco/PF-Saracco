@@ -1,41 +1,41 @@
-.contact__container {
+.contact {
     height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
-    .contact {
+    &__container {
         height: 20rem;
+    }
 
-        &__h1 {
+    &__h1 {
             text-align: center;
             font-size: 3rem;
             margin-bottom: 2rem;
             margin-top: 2rem;
-        }
-    
-        &__p{
-            text-align: center;
-            font-size: 1.5rem;
-        }
-        
-        &__p2{
-            text-align: center;
-            font-size: 1.5rem;
-        }
     }
     
-    .form__container{
+     &__p{
+            text-align: center;
+            font-size: 1.5rem;
+    }
+        
+      &__p2{
+            text-align: center;
+            font-size: 1.5rem;
+    }
+    
+    &__form{
       height: 40rem;
       margin-bottom: 1rem;
+    }
 
-      &__btn{
+    &__btn{
           height: 3rem;
           width: 10rem;
-      }
+    }
       
-      &__label{
-          font-size: 2rem;
-      }
+    &__label{
+          font-size: 1.5em;
     }
 }

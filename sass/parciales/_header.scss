@@ -15,8 +15,9 @@
     
     &__a{
         font-size: $small;
-        margin: 0 1rem;
+        margin: 0 .5rem;
         color: $black;
+        font-family: $montserrat;
     }
     
     &__a:hover{
@@ -25,7 +26,8 @@
     
     &__icon{
         font-size: 2em;
-        font-family: 'Public Sans', sans-serif;
+        font-family: $serif;
+        font-weight: 700;
         padding-left: 1rem;
     }
     

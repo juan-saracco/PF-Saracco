@@ -13,15 +13,17 @@
 
 .header__a {
   font-size: 1.5em;
-  margin: 0 1rem;
-  color: black; }
+  margin: 0 .5rem;
+  color: black;
+  font-family: "Montserrat", sans-serif; }
 
 .header__a:hover {
   color: coral; }
 
 .header__icon {
   font-size: 2em;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
   padding-left: 1rem; }
 
 .header__navbar {
@@ -38,7 +40,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 20rem;
-    width: 25rem;
     bottom: 10rem;
     left: 7rem;
     background-color: #f1b17c;
@@ -48,11 +49,13 @@
     opacity: .9; }
   .main .carousel__span {
     font-size: 2.5em;
-    color: black; }
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; }
   .main .carousel__btn {
     height: 3rem;
     width: 15rem;
-    font-size: 1.5em; }
+    font-family: "Montserrat", sans-serif; }
   .main .carousel__arrow {
     width: 6%; }
   .main .infocard {
@@ -62,7 +65,7 @@
     overflow: hidden; }
     .main .infocard__h3 {
       padding: 1rem;
-      font-size: 2rem; }
+      font-family: "Montserrat", sans-serif; }
     .main .infocard__map {
       padding-left: 1.5rem; }
     .main .infocard__img {
@@ -71,7 +74,8 @@
       object-fit: cover;
       overflow: hidden; }
     .main .infocard__p {
-      font-size: 1.5em;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.3em;
       padding: 1rem 0 1rem 0; }
     .main .infocard__form {
       height: 100%;
@@ -101,7 +105,7 @@
   margin: 0rem 1rem; }
 
 .footer__span {
-  font-size: 1.5em; }
+  font-family: "Montserrat", sans-serif; }
 
 .footer__padding {
   padding: 1rem; }
@@ -113,32 +117,32 @@ footer > div {
   transform: translateY(-10px);
   transition: .5s; }
 
-.contact__container {
+.contact {
   height: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; }
-  .contact__container .contact {
+  .contact__container {
     height: 20rem; }
-    .contact__container .contact__h1 {
-      text-align: center;
-      font-size: 3rem;
-      margin-bottom: 2rem;
-      margin-top: 2rem; }
-    .contact__container .contact__p {
-      text-align: center;
-      font-size: 1.5rem; }
-    .contact__container .contact__p2 {
-      text-align: center;
-      font-size: 1.5rem; }
-  .contact__container .form__container {
+  .contact__h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
+  .contact__p {
+    text-align: center;
+    font-size: 1.5rem; }
+  .contact__p2 {
+    text-align: center;
+    font-size: 1.5rem; }
+  .contact__form {
     height: 40rem;
     margin-bottom: 1rem; }
-    .contact__container .form__container__btn {
-      height: 3rem;
-      width: 10rem; }
-    .contact__container .form__container__label {
-      font-size: 2rem; }
+  .contact__btn {
+    height: 3rem;
+    width: 10rem; }
+  .contact__label {
+    font-size: 1.5em; }
 
 .models__title {
   position: relative;
@@ -175,7 +179,7 @@ footer > div {
   background-color: antiquewhite; }
   .models__card--contacto {
     left: 7rem;
-    width: 32rem; }
+    width: 35rem; }
 
 .models__title {
   grid-area: titulo;
@@ -324,8 +328,8 @@ footer > div {
 
 @media screen and (max-width: 1024px) {
   .header__a {
-    font-size: 1.5em;
-    margin: 0 0.8rem; }
+    font-size: 1.4em;
+    margin: 0 .5rem; }
   .main .carousel__img {
     height: 90vh; }
   .main .infocard {
@@ -338,11 +342,11 @@ footer > div {
     .main .infocard__map {
       padding: 0; }
   .contact__p {
-    font-size: 2rem; }
+    font-size: 1.5em; }
   .contact__p2 {
-    font-size: 2rem; }
+    font-size: 1.5em; }
   .form-label {
-    font-size: 1.5rem; }
+    font-size: 1.5em; }
   .lentes__img1 {
     width: 70%; }
   .lentes__img2 {
@@ -392,6 +396,8 @@ footer > div {
     font-size: 1em; }
   .form-label {
     font-size: 1.5rem; }
+  .contact {
+    margin-bottom: 1rem; }
   .models {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 40vh repeat(4, 1fr);
@@ -448,25 +454,25 @@ footer > div {
     height: 15rem;
     padding: 0;
     width: 100%; }
-  .contact__container {
+  .contact {
     margin-bottom: 1rem;
     height: 50rem;
     align-items: center; }
-    .contact__container .contact {
+    .contact__container {
       padding: .5rem; }
-      .contact__container .contact__h1 {
-        text-align: center;
-        font-size: 2.3rem;
-        margin-bottom: 1rem; }
-      .contact__container .contact__p {
-        font-size: 1.3rem; }
-      .contact__container .contact__p2 {
-        font-size: 1.3rem; }
-    .contact__container .form__container {
+    .contact__h1 {
+      text-align: center;
+      font-size: 2.3rem;
+      margin-bottom: 1rem; }
+    .contact__p {
+      font-size: 1.3rem; }
+    .contact__p2 {
+      font-size: 1.3rem; }
+    .contact__form {
       margin-top: 2rem;
       width: 90%; }
-      .contact__container .form__container .form__label {
-        font-size: 1.3rem; }
+    .contact__label {
+      font-size: 1.3rem; }
   .models {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, 1fr);
